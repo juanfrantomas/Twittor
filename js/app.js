@@ -6,7 +6,7 @@ let swLocation = "/Twittor/sw.js";
 
 if (navigator.serviceWorker){
 
-    if ( url.includes("localhost") )  {
+    if ( url.includes("localhost") || url.includes("127.0.0.1") )  {
         swLocation = "/sw.js";
     }
 
